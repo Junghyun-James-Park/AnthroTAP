@@ -156,17 +156,16 @@
   </div>
 </section>
 
+
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
+      <video id="teaser" autoplay="" muted="" loop="" playsinline="" height="100%">
+        <source src="./static/videos/teaser.mp4" type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        <b>Pf3plat</b> estimates multi-view consistent depth, accurate camera pose, <br>
+        photorealistic novel views from uncalibrated image collections.
       </h2>
     </div>
   </div>
@@ -231,12 +230,12 @@
 </section>
 
 
-<section class="section">
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3" style="margin-top: -20px">Abstract</h2>
         <div class="content has-text-justified">
           <p>
             Human motion, with its inherent complexities, such as non-rigid deformations,
@@ -267,18 +266,28 @@
       </div>
     </div>
     <!--/ Abstract. -->
+  </div>
+</section>
 
-    <!-- Paper video. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Overall Pipeline. -->
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="margin-top: -20px">Overall Pipeline</h2>
+
+        <img src="static/images/overall-pipeline.png" class="center">
+
+        <div class="content has-text-justified" style="margin-top: 15px; text-align: left;">
+          <b>AnthroTAP</b> extract human meshes using an off-the-shelf human mesh recovery model, and track points by projecting the mesh vertices.
+          We also determine point visibility using ray-casting.
+          In parallel, we extract optical flow and retain only reliable flow using forwardbackward consistency.
+          Finally, we filter the trajectories by checking the consistency between the optical flow and the trajectories generated from the human mesh.
         </div>
+
       </div>
     </div>
-    <!--/ Paper video. -->
+    <!-- Overall Pipeline. -->
   </div>
 </section>
 
