@@ -25,6 +25,8 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 
@@ -65,7 +67,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">
+          <h1 class="title is-2 publication-title">
             Learning to Track Any Points from Human Motion
           </h1>
           
@@ -247,31 +249,29 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Human motion, with its inherent complexities, such as non-rigid deformations,
+            articulated movements, clothing distortions, and frequent occlusions caused by
+            limbs or other individuals, provides a rich and challenging source of supervision that
+            is crucial for training robust and generalizable point trackers. Despite the suitability
+            of human motion, acquiring extensive training data for point tracking remains
+            difficult due to laborious manual annotation. 
           </p>
+
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            Our proposed pipeline, <b>AnthroTAP</b>,
+            addresses this by proposing an automated pipeline to generate pseudo-labeled
+            training data, leveraging the Skinned Multi-Person Linear (SMPL) model. We
+            first fit the SMPL model to detected humans in video frames, project the resulting
+            3D mesh vertices onto 2D image planes to generate pseudo-trajectories, handle
+            occlusions using ray-casting, and filter out unreliable tracks based on optical flow
+            consistency. 
           </p>
+
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            A point tracking model trained on AnthroTAP annotated dataset
+            achieves state-of-the-art performance on the TAP-Vid benchmark, surpassing other
+            models trained on real videos while using \( 10,000\times \) less data and only 1 day in 4
+            GPUs, compared to 256 GPUs used in recent state-of-the-art.
           </p>
         </div>
       </div>
