@@ -6,7 +6,7 @@
         content="AnthroTAP, an automated pipeline that leverages the SMPL model to generate pseudo-labeled data for human point tracking, enabling state-of-the-art performance with significantly less supervision and computation.">
   <meta name="keywords" content="AnthroTAP, Anthro-LD, Point tracking, Track Any Point (TAP)">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Learning to Track Any Points from Human Motion</title>
+  <title>AnthroTAP : Learning to Track Any Points from Human Motion</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -106,6 +106,10 @@
             <span class="author-block"><sup>†</sup>Corresponding Authors</span>
           </div>
 
+          <div class="is-size-6 publication-authors" style="margin-top: 10px">
+            <span class="author-block"><b>ArXiv 2025</b></span>
+          </div>
+
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
@@ -160,57 +164,49 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <div id="results-carousel" class="carousel results-carousel">
+      <div id="results-carousel" class="carousel results-carousel" style="margin-top: -25px">
         <div class="item item-steve">
           <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
+            <source src="./static/videos/267_241.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-shiba">
           <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
+            <source src="./static/videos/563_300.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-toby">
           <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
+            <source src="./static/videos/890_300.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/567_300.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/710_300.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/368_300.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/751_251.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/880_300.mp4" type="video/mp4">
           </video>
         </div>
       </div>
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle has-text-centered" style="margin-top: 10px">
         <b>AnthroTAP</b> generates highly complex pseudo-labeled data for point tracking <br>
         by leveraging the inherent complexities of human motion captured in videos.
       </h2>
@@ -264,7 +260,7 @@
     <!-- Overall Pipeline. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3" style="margin-top: -20px">Overall Pipeline</h2>
+        <h2 class="title is-3" style="margin-top: -10px">Overall Pipeline</h2>
 
         <img src="static/images/overall-pipeline.png" class="center">
 
@@ -284,15 +280,10 @@
 
 <section class="section hero" style="padding-top: 0;">
   <div class="container is-max-desktop">
-    <!-- Qualitative Results. -->
+    <!-- Qualitative Comparisons. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Qualitative Results</h2>
-        <!--<h2 class="title is-3 has-text-centered"><br>Qualitative Results</h2>
-        <div class="content has-text-justified" style="margin-top: 15px; text-align: left; font-size: 20px;">
-          <strong>Qualitative comparison of complex real-world video tracking.</strong> We qualitatively compare the results generated by Chrono
-          with those from other commonly used backbones in point tracking. Our model demonstrates better smoothness and precision than other competitors.
-        </div>-->
+        <h2 class="title is-3" style="margin-top: 30px">Qualitative Comparisons</h2>
         <div class="content has-text-justified" style="margin-top: 15px; text-align: left;">
           Compared to previous state-of-the-art methods, <b>Anthro-LocoTrack</b>, LocoTrack-base model
           trained with the dataset generated by our pipeline, consistently demonstrates strong performance
@@ -313,7 +304,7 @@
             </tr>
           </tbody>
         </table>
-        <table>
+        <table style="margin-top: -10px">
           <tbody>
             <tr style="padding:0px">
               <td style="padding-right:1%;width:32%;vertical-align:middle"><div class="vsc-controller vcs-show"></div>
@@ -398,144 +389,70 @@
         </table>
       </div>
     </div>
-    <!-- Qualitative Results. -->
+    <!-- Qualitative Comparisons. -->
   </div>
 </section>
 
 
 <section class="section">
   <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
+    <!-- Quantitative Comparison. -->
+    <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <h2 class="title is-3" style="margin-top: -20px">Quantitative Comparison</h2>
 
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
+        <img src="static/images/main-quan.png" class="center">
 
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
+        <div class="content has-text-justified" style="margin-top: 15px; text-align: left;">
+          LocoTrack-B, trained with our approach, shows a significant performance improvement across all metrics
+          and datasets on <b>TAP-Vid benchmark</b> and <b>RoboTAP</b>, even with \( 11\times \) smaller training dataset
+          than CoTracker3 in terms of the number of videos, and \( 1,000\times \) smaller dataset used in BootsTAPIR
+          in terms of the number of training frames.
+          
+          Furthermore, in terms of position accuracy (\(< δ_{avg}^x \)), our model achieves the best performance on every dataset.
         </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
 
       </div>
     </div>
-    <!--/ Animation. -->
+    <!-- Quantitative Comparison. -->
+  </div>
+</section>
 
 
+<section class="section">
+  <div class="container is-max-desktop">
     <!-- Concurrent Work. -->
-    <div class="columns is-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Related Links</h2>
 
         <div class="content has-text-justified">
           <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
+            <a href="https://co-tracker.github.io//">CoTracker</a> is the first iteration of this work. In the follow-up, we significantly simplified the architecture and showed that it is possible to improve point trackers
+              by trainining them on real data with pseudo-labels produced by other synthetic-trained models. Check out CoTracker as well!
           </p>
           <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
+            <a href="https://bootstap.github.io/">BootsTAPIR</a> is a bootstrapped version of <a href="https://deepmind-tapir.github.io/">TAPIR</a>,  
+            a feed-forward point tracker with a matching stage inspired by <a href="https://arxiv.org/abs/2211.03726">TAP-Vid</a> and a refinement stage inspired by <a href="https://particle-video-revisited.github.io/">PIPs</a>. The model
+            demonstrates accurate tracking of visible points, which improves after scaling. However, it struggles to predict the positions of occluded points.
           </p>
           <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
+            <a href="https://cvlab-kaist.github.io/locotrack/">LocoTrack</a> is an efficient point-tracking model that accuractely tracks visible points. It introduces 4D correlations that we also use in the architecture of CoTracker3.
           </p>
           <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
+            <a href="https://shape-of-motion.github.io/">Shape of Motion</a> is a test-time optimisation method for dynamic reconstrucion that proposes a new motion representation. It produces accurate 3D tracks and shows visuals with nice dynamic reconstructions.
           </p>
           <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+            <a href="https://vggsfm.github.io/">VGGSfM</a> is the first end-to-end differentiable structure-from-motion pipeline that outperforms traditional algorithms. Point tracking is one of its components. 
           </p>
+          
+          
+
+          
         </div>
       </div>
     </div>
-    <!--/ Concurrent Work. -->
-
+    <!-- Concurrent Work. -->
   </div>
 </section>
 
